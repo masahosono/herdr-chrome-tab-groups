@@ -1,6 +1,6 @@
 # Chrome Tab Groups
 
-A Herdr App window whose sidebar groups spaces the way Chrome groups tabs. Spaces sit in colored groups: each group's header is a rounded pill in a light tint of its color with dark text, and its spaces hang off a vertical line in the same color. As in Chrome, a group shows up where its first space is. Under each space, a tree lists its tabs, one row each: a tab's pane, or a split tab's panes side by side as pills, so you can jump straight to any agent. Below the spaces is the shipped Agents list. On the right are slim tabs, framed panes and a status bar.
+Herdr's spaces list as Chrome's tab groups: spaces sit in colored, foldable groups you fill by dragging or from a right-click menu, and each space shows its tabs as a tree, with split tabs as side-by-side pane pills and every agent's status at a glance.
 
 ![Chrome Tab Groups](preview.png)
 
@@ -33,7 +33,7 @@ Left to right, with a 1px `border` divider between them; the window background i
 - **Space row click**: selects the space and opens or closes its tab tree. Closed trees stay closed after a restart.
 - **Tab row or pill click**: switches to its space, selects the tab (`tab.select`) and focuses the pane (`pane.focus`). A pill's `×` closes that pane (`pane.close`).
 - **Space right-click** opens a 230px popup that replaces Herdr's own space menu. It has "Add to new group", "Move to <group>" (with a dot in the group's color) for every other group, and "Remove from group" when the space is in one. After a separator come Rename, New worktree / Open worktree (in a git checkout), Remove worktree (in a linked worktree), and after another separator, Close.
-- **Group header**: a click folds or unfolds it. An unnamed group shows only its color.
+- **Group header**: a click folds or unfolds it. An unnamed group shows only its color. As in Chrome, a group shows up where its first space is; empty groups go last.
 - **Group menu** (250px popup, like a Chrome tab group's): a right-click or `⋮` opens it. On top, a name field (focused, accent border, placeholder "Name this group") renames the group as you type; Enter closes it. Below, 7 color dots (grey plus the six colors), the current one ringed; a click recolors the group. Then "Ungroup" (the group goes, its spaces stay).
 - **New groups**: "Add to new group" on a space, or the group-plus button, makes an unnamed group at once in the least used color and opens its menu. A space joins a group only by drag or the right-click menu.
 - **Dragging a space**: a space row and its tab tree count as one. Over the upper half of the space row, a 2px `accent` line shows above it; anywhere below that (its lower half or its tab rows), the line shows below the whole tree, never between a space and its tabs. Dropping there moves the space before or after that space and into its group. Dropping it on a group header (outlined in `accent`) puts it in that group. Below the last row (the empty room under the list, at least 24px), the line shows at the end of the list, and dropping there takes the space out of its group and moves it after the last space of its machine.
