@@ -1,6 +1,6 @@
 # herdr-chrome-tab-groups
 
-A [Herdr App](https://herdr.dev) layout whose sidebar puts spaces in colored groups like Chrome's tab groups, with a tab tree under each space (split tabs as side-by-side pane pills) and the Agents list.
+A [Herdr App](https://github.com/herdrdev/herdr-app) layout whose sidebar puts spaces in colored groups like Chrome's tab groups, with a tab tree under each space (split tabs as side-by-side pane pills) and the Agents list.
 
 ![Chrome Tab Groups](preview.png)
 
