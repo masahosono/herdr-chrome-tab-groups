@@ -15,6 +15,7 @@ Link the repository into `~/.config/herdr-app/` file by file, so edits show up i
 ```bash
 R=/path/to/herdr-chrome-tab-groups  # where you cloned this repository
 ln -sf $R/layouts/chrome-tab-groups.json ~/.config/herdr-app/layouts/chrome-tab-groups.json
+ln -sf $R/layouts/chrome-tab-groups.png ~/.config/herdr-app/layouts/chrome-tab-groups.png
 M=~/.config/herdr-app/mods/chrome-tab-groups
 mkdir -p $M/icons
 ln -sf $R/mods/chrome-tab-groups/main.js $M/main.js
